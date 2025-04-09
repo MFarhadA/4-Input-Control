@@ -5,6 +5,8 @@ kelas : TIF CID 23 A
 ```
 
 # Aplikasi Input Control Android (Kotlin)
+![Preview Aplikasi](https://github.com/user-attachments/assets/0181089a-baad-45ec-a568-9756d5d104a1)
+
 Aplikasi ini dikembangkan menggunakan Android (Kotlin) dan mengimplementasikan empat jenis input control yang umum digunakan dalam pengembangan aplikasi Android:
 1. DatePicker & TimePicker
 2. AlertDialog
@@ -13,6 +15,7 @@ Aplikasi ini dikembangkan menggunakan Android (Kotlin) dan mengimplementasikan e
 
 ## Fitur dan Penjelasan
 ### 1. Input Control: Date & Time Picker
+![Date Time Picker](https://github.com/user-attachments/assets/39dcdb18-413f-426d-b933-ccbf96d86b08)
 - Fungsi: ```pickDate(view: View)```
 - Menampilkan **DatePickerDialog** untuk memilih tanggal.
 - Setelah tanggal dipilih, langsung ditampilkan **TimePickerDialog** untuk memilih waktu.
@@ -50,6 +53,7 @@ Aplikasi ini dikembangkan menggunakan Android (Kotlin) dan mengimplementasikan e
   datePicker.show()
   ```
 ### 2. Input Control: AlertDialog
+![AlertDialog](https://github.com/user-attachments/assets/2b4492ff-dfca-49a6-bcf4-451ce3b9c47e)
 - Fungsi: ```resetDateTime(view: View)```
 - Menampilkan **AlertDialog** dengan pesan:
   ```
@@ -80,6 +84,7 @@ Aplikasi ini dikembangkan menggunakan Android (Kotlin) dan mengimplementasikan e
     .show()
   ```
 ### 3. Input Control: Toast (Saat Reset)
+![Toast](https://github.com/user-attachments/assets/8b8d4dd1-cfd9-4191-b41d-0257503edfab)
 - Saat pengguna memilih "Yakin" di dalam **AlertDialog**, maka muncul **Toast** dengan pesan:
   ```
   Tanggal & waktu telah direset
@@ -88,7 +93,8 @@ Aplikasi ini dikembangkan menggunakan Android (Kotlin) dan mengimplementasikan e
   ```Kotlin
   Toast.makeText(this, "Tanggal & waktu telah direset", Toast.LENGTH_SHORT).show()
   ```
-### 4. Input Control: EditText & Toast
+### 4. Input Control: Input Phone Number & Toast
+![Input Phone Number & Toast](https://github.com/user-attachments/assets/eccc5ba9-47b7-4144-828c-bf4b720c5502)
 - Fungsi: ```toastPhone(view: View)```
 - Mengambil input dari **EditText** dengan ID ```et_phone```.
 - Menampilkan **Toast** berisi nomor telepon yang diinput pengguna:
